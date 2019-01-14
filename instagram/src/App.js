@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import dummyData from './dummy-data';
+import PostContainer from './Components/PostContainer';
+import SearchBar from './Components/SearchBar';
+
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: dummyData
+    };
+  }
+
   render() {
     return (
       <div>
-        <header>
-          <SearchBar />
-        </header>
-          {
-            dummyData.map(data => {
-              return <PostContainer key={data.id} data={data} />
-            })
-          }
+        <SearchBar />
+        <PostContainer posts={this.state.posts} />
       </div>
-    );
+    )
   }
 }
 
