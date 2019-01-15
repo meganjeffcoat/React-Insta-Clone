@@ -8,13 +8,14 @@ class CommentSection extends React.Component {
       super(props);
       this.state = {
         comments: props.comments
+        console.log(props.comments);
       };
     }
     render() {
       return (
         <div>
-          {this.state.comments.map((c, i) => <Comment key={i} comment={c} />)}
-          console.log(props.comments);
+          {this.state.comments.map((c, i) => 
+          <Comment key={i} comment={c} />)}
           <CommentInput />
         </div>
       );
