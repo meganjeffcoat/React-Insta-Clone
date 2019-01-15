@@ -1,19 +1,31 @@
-.user-info {
-    display: flex;
-    flex-direction: row;
-    flex-flow: flex-start;
-    align-items: center;
-    height: 80px;
+.pContainer-wrap {
+  height: 500px;
+  width: 50%;
+  margin: 5px auto;
+}
+.p-border {
+  border: 1px solid #d3d3d3;
+  margin: 5px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.pImage-wrap {
+  height: 100%;
+  width: 100%;
 }
 
-.user-info img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-    border-radius: 15px;
+.p-img {
+  width: 100%;
 }
 
-.post-image img {
-    width: 100%;
+.p-header {
+  display: flex;
 }
 
+.pThumb-wrap {
+  height: 50px;
+  width: 50px;
+}
+.post-thumb {
+  height: 100%;
+  border-radius: 50%;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+
 const Comment = props => {
     return (
         <div className='comment-container'>
@@ -11,9 +12,11 @@ const Comment = props => {
     )
 }
 
-Comment.PropTypes = {
-    text: PropTypes.string.isRequired,
-    username: PropTypes.string
-};
+Comment.propTypes = {
+    comment: PropTypes.shape({
+      text: PropTypes.string,
+      username: PropTypes.string
+    })
+  };
 
 export default Comment;

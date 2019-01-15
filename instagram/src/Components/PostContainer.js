@@ -1,31 +1,14 @@
 import React from 'react';
 import Post from './Post';
 
-import PropTypes from 'prop-types';
+import './PostContainer.css';
 
 const PostContainer = props => {
     return (
-        props.posts.map(post => {
-            return(
-                <div className="container">
-                    <Post 
-                    post={post}
-                    key={Math.random()} 
-                    username={post.username}
-                    thumbnailUrl={post.thumbnailUrl}
-                    imageUrl={post.imageUrl}
-                    likes={post.likes}
-                    timestamp={post.timestamp}
-                    comments={post.comments}
-                    />
-                </div>
-            )
-        })
-    )
+        <div className='pContainer-wrap'>
+            {props.posts.map(p => <Post key={p.imageUrl} post={p} />)}
+        </div>
+    );
 }
-
-PostContainer.propType = {
-    posts: PropTypes.arrayOf(PropTypes.object)
-};
 
 export default PostContainer;
