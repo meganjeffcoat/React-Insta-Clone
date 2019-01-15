@@ -1,7 +1,7 @@
 import React from "react";
 
 import PostHeader from './PostHeader';
-import CommentSection from './CommentSection';
+import CommentSection from './CommentSectionContainer';
 import './PostContainer.css';
 
 
