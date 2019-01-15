@@ -1,13 +1,12 @@
 import React from 'react';
-import logo from './app-icon2.png';
+import logo from './logo.png';
+import './SearchBar.css';
 
 const SearchBar = () => {
     return (
-        <div>SearchBar</div>
         <div className='searchbar-wrapper'>
             <div className='nav img-logo'>
                 <img src={logo} alt='insta-logo' />
-                <h1>Instagram</h1>
             </div>
             <div className='nav'>
                 <button>
@@ -17,13 +16,13 @@ const SearchBar = () => {
             </div>
             <div className="nav-icons">
                 <div className='icons'>
-                    <i className='compass'></i>
+                    <i className='fa fa-compass'></i>
                 </div>
                 <div className='icons'>
-                    <i className='heart'></i>
+                    <i className='fa fa-heart'></i>
                 </div>
                 <div className='icons'>
-                    <i className='user'></i>
+                    <i className='fa fa-user'></i>
                 </div>
             </div>
         </div>

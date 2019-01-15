@@ -17,8 +17,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <SearchBar />
-        <PostContainer posts={this.state.posts} />
+        <nav className='container'>
+          <SearchBar />
+        </nav>
+        <div className='body-wrapper'>
+          <PostContainer posts={this.state.posts} />
+        </div>
       </div>
     )
   }

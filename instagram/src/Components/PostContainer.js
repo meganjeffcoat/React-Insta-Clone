@@ -5,12 +5,17 @@ const PostContainer = props => {
     return (
         props.posts.map(post => {
             return (
-                <Post
-                key={Math.random()}
-                username={post.username}
-                thumbnailUrl={post.thumbnailUrl}
-                imageUrl={post.imageUrl}
-                />
+                <div className='container'>
+                    <Post
+                    key={Math.random()}
+                    username={post.username}
+                    thumbnailUrl={post.thumbnailUrl}
+                    imageUrl={post.imageUrl}
+                    likes={post.likes}
+                    timestamp={post.timestamp}
+                    comments={post.comments}
+                    />
+                </div>
             )
         })
     )

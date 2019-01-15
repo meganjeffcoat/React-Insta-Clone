@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
 }
 
 .App-logo {
@@ -30,3 +39,9 @@
     transform: rotate(360deg);
   }
 }
+
+.body-wrapper {
+  width: 800px;
+}
+
+
