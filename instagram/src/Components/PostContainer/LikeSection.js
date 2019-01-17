@@ -1,22 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
+import {FlexWrap} from '../CommentSection/Comment';
+
+const LikeSectionDiv = styled.div`
+    height: 9px;
+    width: 10px;
+    margin: 10px;
+    padding-bottom: 20px;
+`;
 
 const LikeSection = props => {
     return [
-        <div className='like-section'
-            key='likes-icons-container'
-            onClick={props.incrementLike}
-        >
-            <div className='like-section-wrap'>
-                <i className='fas fa-heart' />
-            </div>
-            <div className='like-section-wrap'>
-                <i className='fas fa-comment' />
-            </div>
-        </div>,
-        <div className='like-section' key='likes-container'>
-            <div className='like-section-wrap'>{props.likes}</div>
-        </div>    
+      <FlexWrap
+        key="likes-icons-container"
+        onClick={props.incrementLike}
+        comment
+      >
+        <LikeSectionDiv>
+          <i className="far fa-heart" />
+        </LikeSectionDiv>
+        <LikeSectionDiv>
+          <i className="far fa-comment" />
+        </LikeSectionDiv>
+      </FlexWrap>,
+      <FlexWrap key="likes-container" comment>
+        <LikeSectionDiv>{props.likes}</LikeSectionDiv>
+      </FlexWrap>
     ];
-}
+  };
 
 export default LikeSection;

@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from './logo.png';
+
+
+import logo from './app-icon2.png';
 import './SearchBar.css';
 
 
