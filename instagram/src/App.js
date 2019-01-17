@@ -2,39 +2,23 @@ import React, { Component } from 'react';
 import './App.css';
 import PostsPage from './Components/PostContainer/PostsPage';
 import authenticate from './Components/Authentication/authenticate';
-import dummyData from './dummy-data';
+import LoginPage from './Components/Login/Login';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      post: [],
-      filteredPost: []
-    };
+    this.state = {};
   }
-
-componentDidMount() {
-  this.setState({ post: dummyData})
-};
-
-searchPostsHandler = e => {
-  const posts = this.state.post.filter(p => {
-    if (p.username.includes(e.target.value)) {
-      return p;
-    }
-  });
-}
 
   render() {
     return (
       <div className="App">
-        <PostsPage />
-        
+        <ConditionalView />
       </div>
     );
   }
 }
 
+const ConditionalView = authenticate(PostsPage)(LoginPage);
 
-
-export default authenticate(App);
+export default App;
