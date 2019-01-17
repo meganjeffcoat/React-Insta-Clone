@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import logo from './app-icon2.png';
+import logo from './logo.png';
 import './SearchBar.css';
 
 
@@ -16,13 +16,13 @@ const SearchBar = () => {
         </div>
         <div className="social-wrapper">
           <div className="social">
-            <i className="fas fa-compass"></i>
+            <i className="far fa-compass"></i>
           </div>
           <div className="social">
-            <i className="fas fa-heart"></i>
+            <i className="far fa-heart"></i>
           </div>
           <div className="social">
-            <i classNape="fas fa-user-circle"></i>
+            <i className="far fa-user-circle"></i>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ const LikeSectionDiv = styled.div`
     width: 10px;
     margin: 10px;
     padding-bottom: 20px;
+    
 `;
 
 const LikeSection = props => {
@@ -24,7 +25,7 @@ const LikeSection = props => {
         </LikeSectionDiv>
       </FlexWrap>,
       <FlexWrap key="likes-container" comment>
-        <LikeSectionDiv>{props.likes}</LikeSectionDiv>
+        <LikeSectionDiv>{props.likes}Likes</LikeSectionDiv>
       </FlexWrap>
     ];
   };
