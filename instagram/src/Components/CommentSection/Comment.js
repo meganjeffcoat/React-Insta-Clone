@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 export const FlexWrap = styled.div`
   display: flex;
+  align-items: baseline;
   ${props =>
     props &&
     css`
@@ -17,15 +18,16 @@ export const FlexWrap = styled.div`
 const CommentP = styled.p`
     font-weight: 450;
     font-size: 0.8em;
-    padding: 0 5px;
+    padding: 3px 0;
+    margin: 5px;
 `;
 
 
 const Comment = props => {
     return (
       <FlexWrap>
-        <UserName>{props.comment.username}</UserName>
         <CommentP>{props.comment.text}</CommentP>
+        <UserName>-{props.comment.username}</UserName>
       </FlexWrap>
     );
   };

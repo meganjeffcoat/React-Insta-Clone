@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
+import './Login.css';
+import colorlogo from './app-icon2.png';
 
 class Login extends Component {
     constructor(props) {
@@ -23,8 +25,9 @@ class Login extends Component {
     render() {
         return (
             <Form className='login-form'>
-                <h1>React Insta Clone</h1>
-                <div>Login to begin</div>
+                <h1>InstaClone</h1>
+                <img src={colorlogo} />
+                <div className='subHeader'>Login to begin</div>
                 <FormGroup>
                     <Input 
                         type='text'
@@ -43,7 +46,7 @@ class Login extends Component {
                         onChange={this.handleInputChange}
                     />
                     <br />
-                    <Button color='success' size='large' onClick={this.handleLoginSubmit}>
+                    <Button color='dark' size='large' onClick={this.handleLoginSubmit}>
                     Log In
                     </Button>
                 </FormGroup>
