@@ -1,0 +1,31 @@
+.pContainer-wrap {
+  height: 500px;
+  width: 50%;
+  margin: 5px auto;
+}
+.p-border {
+  border: 1px solid #d3d3d3;
+  margin: 5px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.pImage-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.p-img {
+  width: 100%;
+}
+
+.p-header {
+  display: flex;
+}
+
+.pThumb-wrap {
+  height: 50px;
+  width: 50px;
+}
+.post-thumb {
+  height: 100%;
+  border-radius: 50%;
+}
